@@ -163,3 +163,24 @@ export default function Home() {
     </main>
   );
 }
+<button
+  onClick={() => {
+    if (window.ChannelIO) {
+      window.ChannelIO("showMessenger");
+    }
+  }}
+  style={{
+    position: "fixed",
+    right: 20,
+    bottom: 20,
+    padding: "14px 18px",
+    borderRadius: "999px",
+    border: "none",
+    background: "#111",
+    color: "#fff",
+    fontWeight: "bold",
+    cursor: "pointer",
+  }}
+>
+  💬 상담하기
+</button>
